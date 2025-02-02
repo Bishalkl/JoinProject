@@ -21,7 +21,7 @@ class CitySeeder extends Seeder
         // using collection feature
         $cities->each(function ($city) {
             City::create([
-                'cityName' => $city->cityName,
+                'cityName' => $city->cityName
             ]);
         });
     }
