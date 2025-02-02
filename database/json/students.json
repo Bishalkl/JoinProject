@@ -1,0 +1,12 @@
+[
+    { "name": "John Doe", "age": 20, "city": 1 },
+    { "name": "Jane Smith", "age": 22, "city": 2 },
+    { "name": "Sam Johnson", "age": 21, "city": 3 },
+    { "name": "Anna Williams", "age": 19, "city": 4 },
+    { "name": "Mike Brown", "age": 23, "city": 5 },
+    { "name": "Sara Davis", "age": 18, "city": 6 },
+    { "name": "David Miller", "age": 25, "city": 7 },
+    { "name": "Emily Wilson", "age": 24, "city": 8 },
+    { "name": "Chris Moore", "age": 20, "city": 9 },
+    { "name": "Katie Taylor", "age": 22, "city": 10 }
+]
