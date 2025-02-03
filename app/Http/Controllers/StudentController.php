@@ -7,6 +7,9 @@ use Illuminate\Support\Facades\DB;
 
 class StudentController extends Controller
 {
+
+
+
     // method for showing the data students
     public function showStudents() {
         $students = DB::table('students')
@@ -47,5 +50,17 @@ class StudentController extends Controller
                         })
                         ->get();
         return $students;
+    }
+
+    // method for chunk
+    public function chunkData() {
+        $students = DB::table('students')
+                        ->orderBy('id')
+                        ->chunkById(3, function($students) {
+                            echo "<br>";
+                            foreach($students as $student) {
+                                echo $student->name . "<br>";
+                            };
+                        });
     }
 }
