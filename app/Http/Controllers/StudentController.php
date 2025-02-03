@@ -35,4 +35,17 @@ class StudentController extends Controller
 
         return $students;
     }
+
+    // method for when condition
+    public function whenData() {
+        $test = true;
+        $students = DB::table('students')
+                        ->when($test, function($query) {
+                            $query->where('age', '>', 20);
+                        }, function($query) {
+                            $query->where('age', '<', 20);
+                        })
+                        ->get();
+        return $students;
+    }
 }
