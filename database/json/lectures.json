@@ -1,0 +1,12 @@
+[
+    { "name": "Liam Anderson", "age": 26, "city": 1 },
+    { "name": "Olivia Martinez", "age": 24, "city": 2 },
+    { "name": "Noah Thompson", "age": 23, "city": 3 },
+    { "name": "Emma Hernandez", "age": 22, "city": 4 },
+    { "name": "William Garcia", "age": 21, "city": 5 },
+    { "name": "Ava Robinson", "age": 20, "city": 6 },
+    { "name": "James Clark", "age": 27, "city": 7 },
+    { "name": "Sophia Rodriguez", "age": 19, "city": 8 },
+    { "name": "Benjamin Lewis", "age": 25, "city": 9 },
+    { "name": "Mia Walker", "age": 18, "city": 10 }
+]
