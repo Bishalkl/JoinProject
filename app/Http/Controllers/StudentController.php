@@ -22,13 +22,15 @@ class StudentController extends Controller
         $lectures = DB::table('lectures')
                         ->select('id', 'name', 'age', 'cityName')
                         ->join('cities', 'lectures.city', '=',
-                        'cities.cid');
+                        'cities.cid')
+                        ->where('cityName', '=', 'Houston');
 
         $students = DB::table('students')
                         ->union($lectures)
                         ->select('id', 'name', 'age', 'cityName')
                         ->join('cities', 'students.city', '=',
                         'cities.cid')
+                        ->where('cityName', '=', 'san Antonio')
                         ->get();
 
         return $students;
